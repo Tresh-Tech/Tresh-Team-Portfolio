@@ -1,0 +1,15 @@
+.uv-container {
+  height: 100vh;
+  width: 100%;
+}
+
+.uv-container .uv-content {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.uv-container .uv-content div {
+  position: absolute;
+  z-index: -1;
+}

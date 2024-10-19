@@ -1,6 +1,29 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 17.5px;
+  color: black;
+  text-shadow: 1px 1px 3px white;
   text-align: center;
+}
+
+a {
+  font-size: 3rem;
+  text-shadow: 1px 1px 0px white, 1px 1px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.command {
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .command {
+    width: 100%;
+  }
 }
