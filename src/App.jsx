@@ -1,4 +1,4 @@
-import "./App.css";
+import "./styles/App.css";
 import "ldrs/grid";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import CanvasBg from "./components/canvas-bg/canvas-bg";
