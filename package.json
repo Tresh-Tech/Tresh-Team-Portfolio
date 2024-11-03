@@ -21,6 +21,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-rough-notation": "^1.0.5",
+    "react-router-dom": "^6.27.0",
     "rough-notation": "^0.5.1",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7",

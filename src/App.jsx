@@ -16,6 +16,7 @@ import {
   CommandShortcut,
 } from "@/components/ui/command";
 import { Link } from "lucide-react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -91,7 +92,8 @@ function App() {
           </div>
         </div>
       )}
-      <div className="space">space</div>
+
+      
     </>
   );
 }
