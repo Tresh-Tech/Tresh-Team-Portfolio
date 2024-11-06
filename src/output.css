@@ -1,5 +1,7 @@
 /* ############  DO NOT REMOVE THIS PART OF THE CODE ##########*/
-
+/* #root {
+  background: red;
+} */
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
