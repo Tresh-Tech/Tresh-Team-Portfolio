@@ -19,7 +19,7 @@ const NavBar = () => {
     const location = useLocation()
     return (
         <>
-            <section className='flex items-center justify-around py-4 border border-black'>
+            <section className='flex px-[50px] items-center justify-around z-50 mt-[30px] fixed w-full'>
                 <img src={Logo} alt="" className='lg:w-[200px] max-lg:w-[180px]' />
                 {/* NavLinks */}
                 {/* <ul className='flex flex-1 max-tablet:hidden justify-center items-center lg:gap-x-6 max-lg:gap-x-2'>
@@ -53,41 +53,41 @@ const NavBar = () => {
                     <NavigationMenu>
                         <NavigationMenuList className='space-x-6'>
                             <NavigationMenuItem>
-                                <Link className='text-2xl' href="/" legacyBehavior passHref>
+                                <Link className='text-xl' to="/" legacyBehavior passHref>
                                     <NavigationMenuLink className=''>
                                         Home
                                     </NavigationMenuLink>
                                 </Link>
                             </NavigationMenuItem>
                             <NavigationMenuItem>
-                                <Link className='text-2xl' href="/about" legacyBehavior passHref>
+                                <Link className='text-xl' to="/about" legacyBehavior passHref>
                                     <NavigationMenuLink className=''>
                                         About
                                     </NavigationMenuLink>
                                 </Link>
                             </NavigationMenuItem>
                             <NavigationMenuItem>
-                                <Link className='text-2xl' href="/contact" legacyBehavior passHref>
+                                <Link className='text-xl' to="/contact" legacyBehavior passHref>
                                     <NavigationMenuLink>
                                         Contact
                                     </NavigationMenuLink>
                                 </Link>
                             </NavigationMenuItem>
                             <NavigationMenuItem>
-                                <NavigationMenuTrigger className='text-2xl p-0'>Dashboard</NavigationMenuTrigger>
+                                <NavigationMenuTrigger className='text-xl p-0'>Dashboard</NavigationMenuTrigger>
                                 <NavigationMenuContent>
-                                    {/* <ul className="grid bg-treshBlack gap-3 md:w-[200px]"> */}
-                                    {/* <li> */}
-                                    <NavigationMenuLink className='bg-treshBlue' asChild>
-                                        {/* <Link
+                                    <ul className="grid bg-treshBlack gap-3 md:w-[200px]">
+                                        <li>
+                                            <NavigationMenuLink asChild>
+                                                <Link
                                                     className="flex h-full w-full rounded-md p-2 text-white"
                                                     to="/"
-                                                > */}
-                                        Sign in / Sign up
-                                        {/* </Link> */}
-                                    </NavigationMenuLink>
-                                    {/* </li> */}
-                                    {/* </ul> */}
+                                                >
+                                                    Sign in / Sign up
+                                                </Link>
+                                            </NavigationMenuLink>
+                                        </li>
+                                    </ul>
                                 </NavigationMenuContent>
                             </NavigationMenuItem>
                         </NavigationMenuList>
@@ -95,8 +95,8 @@ const NavBar = () => {
                 </div>
 
                 <div className='flex max-tablet:hidden items-center gap-x-3.5 mr-2'>
-                    <button className='font-semibold border border-black rounded-xl p-2.5'>Log in</button>
-                    <button className='bg-treshBlue p-2.5 font-semibold rounded-xl text-white'>Sign up</button>
+                    <button className='font-semibold text-xl text-center border border-black rounded-xl p-2.5'>Log in</button>
+                    <button className='bg-treshBlue text-xl text-center p-2.5 font-semibold rounded-xl text-white'>Sign up</button>
                 </div>
             </section >
         </>
