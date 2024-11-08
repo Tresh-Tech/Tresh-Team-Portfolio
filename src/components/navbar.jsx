@@ -20,7 +20,8 @@ const NavBar = () => {
     return (
         <>
             <section className='flex px-[50px] items-center justify-around z-50 mt-[30px] fixed w-full'>
-                <img src={Logo} alt="" className='lg:w-[200px] max-lg:w-[180px]' />
+                <img src={Logo}
+                    alt="Tresh Tech's Team Logo"  className='lg:w-[200px] max-lg:w-[180px]' />
                 {/* NavLinks */}
                 {/* <ul className='flex flex-1 max-tablet:hidden justify-center items-center lg:gap-x-6 max-lg:gap-x-2'>
                     <li>
