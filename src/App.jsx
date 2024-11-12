@@ -1,26 +1,52 @@
 import "./styles/App.css";
-import { useState } from "react";
-import { Button } from "./components/ui/button";
-import { Routes, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NavBar from "./components/navbar";
+
+import MainLayout from "./layout/MainLayout";
+import DashBoardLayout from "./layout/DashBoardLayout";
+
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import NotFound from "./pages/NotFound";
+import DashBoard from "./pages/Dashboard";
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <MainLayout />,
+    errorElement: <NotFound />,
+    children: [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
+      {
+        path: "/about",
+        element: <AboutPage />,
+      },
+      {
+        path: "/contact",
+        element: <ContactPage />,
+      },
+      {
+        path: "/dashboard",
+        element: <DashBoardLayout />,
+        children: [
+          {
+            path: "/dashboard",
+            element: <DashBoard />,
+          },
+        ],
+      },
+    ],
+  },
+]);
 
 function App() {
-  const [isVisible, setIsVisible] = useState(false);
-
   return (
     <>
-      {/* <div className="px-[50px] w-full"> */}
-      <NavBar />
-        <Routes>
-          <Route path="/" element={<HomePage/>} />
-          <Route path="/about" element={<AboutPage/>} />
-          <Route path="/contact" element={<ContactPage/>} />
-        </Routes>
-      {/* </div> */}
+      <RouterProvider router={router} />
     </>
   );
 }

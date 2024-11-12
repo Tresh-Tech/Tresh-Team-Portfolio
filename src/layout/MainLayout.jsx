@@ -1,22 +1,17 @@
-import CanvasBg from "@/components/canvas-bg/canvas-bg";
 import Navbar from "@/components/Navbar";
+import { NavLink, Outlet } from "react-router-dom";
 
-
-function MainLayout() {
-
-    return (
-      <>
+const MainLayout = () => {
+  return (
+    <>
       <header>
-        <Navbar/>
+        <Navbar />
       </header>
-        <div className="hero-container">
-          <CanvasBg />
-          <div className="hero">
-            <span>Hello</span>
-          </div>
-        </div>
-      </>
-    )
+      <main>
+        <Outlet/>
+      </main>
+    </>
+  );
 }
 
 export default MainLayout;
