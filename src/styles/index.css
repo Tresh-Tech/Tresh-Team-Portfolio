@@ -29,3 +29,17 @@
 }
 
 /* ############  END CONTINUE BELOW ##########*/
+
+/* Contact Page */
+.container {
+  padding: 12rem 5rem;
+  width: 100%;
+}
+
+.rounded-lg img {
+  height: 40em;
+}
+
+input{
+
+}
