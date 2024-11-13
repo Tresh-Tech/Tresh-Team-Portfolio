@@ -49,7 +49,7 @@ const NavBar = () => {
           className="lg:w-[200px] max-lg:w-[180px]"
         />
 
-        <div className="flex relative justify-center items-center">
+        <div className="hidden lg:flex relative justify-center items-center">
           <NavigationMenu>
             <NavigationMenuList className="space-x-6">
               {["home", "about", "contact"].map((link, index) => (
@@ -124,7 +124,7 @@ const NavBar = () => {
             </NavigationMenuList>
           </NavigationMenu>
         </div>
-        <div className="flex max-tablet:hidden items-center gap-x-3.5 mr-2">
+        <div className="hidden lg:flex max-tablet:hidden items-center gap-x-3.5 mr-2">
           <button className="font-semibold text-xl text-center border border-black rounded-xl p-2.5">
             Log in
           </button>

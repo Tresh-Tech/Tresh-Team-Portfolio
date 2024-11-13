@@ -5,8 +5,8 @@ const Footer = ()=> {
     return (
       <>
         <footer className="mt-24 pb-12">
-          <div className="grid grid-cols-4 gap-8">
-            <div>
+          <div className="flex sm:flex-row flex-col gap-8">
+            <div className="grow">
               <h3 className="font-semibold mb-4">Tresh Team</h3>
               <div className="flex space-x-4 mt-4">
                 <a href="#" className="text-gray-400 hover:text-gray-600">
@@ -43,7 +43,7 @@ const Footer = ()=> {
             </div>
 
             {["Topic", "Topic", "Topic"].map((title, index) => (
-              <div key={index}>
+              <div key={index} className="md:max-w-[187px] flex-1">
                 <h3 className="font-semibold mb-4">{title}</h3>
                 <ul className="space-y-2">
                   {["Page", "Page", "Page", "Page"].map((page, pageIndex) => (
